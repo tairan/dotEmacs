@@ -18,6 +18,13 @@
 ;; Disable the toolbar
 (tool-bar-mode -1)
 
-;; Fullscreen mode
-(custom-set-variables
- '(initial-frame-alist (quote ((fullscreen . maximized)))))
+(add-to-list 'load-path "~/.emacs.d")
+
+(if (eq system-type 'windows-nt)
+    (require 'winnt))
+
+(if (eq system-type 'gnu/linux)
+    (require 'linux))
+
+(if (eq system-type 'darwin)
+    (require 'macosx))

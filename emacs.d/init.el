@@ -10,7 +10,7 @@
    (or (package-installed-p package)
        (if (y-or-n-p (format "Package %s is missing. Install it?" package))
 	   (package-install package))))
- '(coffee-mode markdown-mode color-theme-solarized))
+ '(coffee-mode markdown-mode color-theme-solarized yaml-mode))
 
 
 (load-theme 'solarized-dark t)

@@ -20,6 +20,14 @@
 
 (add-to-list 'load-path "~/.emacs.d")
 
+;; Yaml mode
+(add-to-list 'auto-mode-alist '("\\.sls$" . yaml-mode))
+
+(add-hook 'yaml-mode-hook
+	  '(lambda ()
+	     (define-key yaml-mode-map "\C-m" 'newline-and-indent)))
+
+;; Platform
 (if (eq system-type 'windows-nt)
     (require 'winnt))
 

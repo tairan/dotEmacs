@@ -17,6 +17,8 @@
 
 ;; Disable the toolbar
 (tool-bar-mode -1)
+;; show line number
+(global-linum-mode t)
 
 (add-to-list 'load-path "~/.emacs.d")
 

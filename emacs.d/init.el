@@ -1,8 +1,9 @@
+
 (require 'package)
+(package-initialize)
 (add-to-list 'package-archives
 	     '("marmalade" . 
 	       "http://marmalade-repo.org/packages/"))
-(package-initialize)
 
 ;; install packages
 (mapc
@@ -15,10 +16,17 @@
 
 (load-theme 'solarized-dark t)
 
-;; Disable the toolbar
-(tool-bar-mode -1)
+;;http://stackoverflow.com/questions/5795451/how-to-detect-that-emacs-is-in-terminal-mode
+(when (display-graphic-p)
+  ;; disable toolbar in x
+  (tool-bar-mode -1))
+
 ;; show line number
 (global-linum-mode t)
+
+(defvar main-dir user-emacs-directory)
+(setq user-emacs-directory (expand-file-name "savefiles/" main-dir))
+(setq package-user-dir (expand-file-name "elpa" main-dir))
 
 (add-to-list 'load-path "~/.emacs.d")
 
@@ -38,3 +46,4 @@
 
 (if (eq system-type 'darwin)
     (require 'macosx))
+

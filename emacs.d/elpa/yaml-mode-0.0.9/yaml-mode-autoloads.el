@@ -1,11 +1,11 @@
 ;;; yaml-mode-autoloads.el --- automatically extracted autoloads
 ;;
 ;;; Code:
-
+(add-to-list 'load-path (or (file-name-directory #$) (car load-path)))
 
-;;;### (autoloads (yaml-mode yaml) "yaml-mode" "yaml-mode.el" (21205
-;;;;;;  43246 599909 560000))
-;;; Generated autoloads from yaml-mode.el
+;;;### (autoloads nil "yaml-mode" "../../../../.emacs.d/elpa/yaml-mode-0.0.9/yaml-mode.el"
+;;;;;;  "92f599868f74a658fb9e407306e00544")
+;;; Generated autoloads from ../../../../.emacs.d/elpa/yaml-mode-0.0.9/yaml-mode.el
 
 (let ((loads (get 'yaml 'custom-loads))) (if (member '"yaml-mode" loads) nil (put 'yaml 'custom-loads (cons '"yaml-mode" loads))))
 
@@ -20,16 +20,15 @@ Simple mode to edit YAML.
 
 ;;;***
 
-;;;### (autoloads nil nil ("yaml-mode-pkg.el") (21205 43246 830401
-;;;;;;  959000))
+;;;### (autoloads nil nil ("../../../../.emacs.d/elpa/yaml-mode-0.0.9/yaml-mode-autoloads.el"
+;;;;;;  "../../../../.emacs.d/elpa/yaml-mode-0.0.9/yaml-mode.el")
+;;;;;;  (21736 14105 995623 816000))
 
 ;;;***
 
-(provide 'yaml-mode-autoloads)
 ;; Local Variables:
 ;; version-control: never
 ;; no-byte-compile: t
 ;; no-update-autoloads: t
-;; coding: utf-8
 ;; End:
 ;;; yaml-mode-autoloads.el ends here

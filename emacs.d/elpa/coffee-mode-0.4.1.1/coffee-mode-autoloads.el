@@ -1,11 +1,11 @@
 ;;; coffee-mode-autoloads.el --- automatically extracted autoloads
 ;;
 ;;; Code:
-
+(add-to-list 'load-path (or (file-name-directory #$) (car load-path)))
 
-;;;### (autoloads (coffee-mode) "coffee-mode" "coffee-mode.el" (21195
-;;;;;;  1275 699991 801000))
-;;; Generated autoloads from coffee-mode.el
+;;;### (autoloads nil "coffee-mode" "../../../../.emacs.d/elpa/coffee-mode-0.4.1.1/coffee-mode.el"
+;;;;;;  "b1c98306dc2959c543a9ff59095af214")
+;;; Generated autoloads from ../../../../.emacs.d/elpa/coffee-mode-0.4.1.1/coffee-mode.el
 
 (autoload 'coffee-mode "coffee-mode" "\
 Major mode for editing CoffeeScript.
@@ -18,16 +18,15 @@ Major mode for editing CoffeeScript.
 
 ;;;***
 
-;;;### (autoloads nil nil ("coffee-mode-pkg.el") (21195 1275 913636
-;;;;;;  979000))
+;;;### (autoloads nil nil ("../../../../.emacs.d/elpa/coffee-mode-0.4.1.1/coffee-mode-autoloads.el"
+;;;;;;  "../../../../.emacs.d/elpa/coffee-mode-0.4.1.1/coffee-mode.el")
+;;;;;;  (21736 14100 864028 213000))
 
 ;;;***
 
-(provide 'coffee-mode-autoloads)
 ;; Local Variables:
 ;; version-control: never
 ;; no-byte-compile: t
 ;; no-update-autoloads: t
-;; coding: utf-8
 ;; End:
 ;;; coffee-mode-autoloads.el ends here

@@ -1,9 +1,9 @@
-
 (require 'package)
+;(add-to-list 'package-archives
+;	     '("marmalade" . 
+;	       "http://marmalade-repo.org/packages/"))
+
 (package-initialize)
-(add-to-list 'package-archives
-	     '("marmalade" . 
-	       "http://marmalade-repo.org/packages/"))
 
 ;; install packages
 (mapc
@@ -11,17 +11,9 @@
    (or (package-installed-p package)
        (if (y-or-n-p (format "Package %s is missing. Install it?" package))
 	   (package-install package))))
- '(coffee-mode markdown-mode color-theme-solarized yaml-mode))
+ '(coffee-mode markdown-mode color-theme-solarized yaml-mode python-mode go-mode json-mode))
 
-
-(load-theme 'solarized-dark t)
-
-;;http://stackoverflow.com/questions/5795451/how-to-detect-that-emacs-is-in-terminal-mode
-(when (display-graphic-p)
-  ;; disable toolbar in x
-  (tool-bar-mode -1))
-
-;; show line number
+; show line number
 (global-linum-mode t)
 
 (defvar main-dir user-emacs-directory)
@@ -47,3 +39,6 @@
 (if (eq system-type 'darwin)
     (require 'macosx))
 
+;;http://stackoverflow.com/questions/5795451/how-to-detect-that-emacs-is-in-terminal-mode
+(when (display-graphic-p)
+  (require 'x))

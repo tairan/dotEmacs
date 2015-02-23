@@ -27,27 +27,9 @@
 	     (assoc pkg package-archive-contents))
     (package-install pkg)))
 
-
-(setq-default major-mode 'text-mode)
-
-;; global settings
-; show line number
-(global-linum-mode t)
-(global-hl-line-mode t)
-(global-whitespace-mode t)
-(global-whitespace-newline-mode t)
-
-;; bugfix 
-(defvar main-dir user-emacs-directory)
-(setq user-emacs-directory (expand-file-name "savefiles/" main-dir))
-(setq package-user-dir (expand-file-name "elpa" main-dir))
-(add-to-list 'load-path "~/.emacs.d")
-
-;; Yaml mode
-(add-to-list 'auto-mode-alist '("\\.sls$" . yaml-mode))
-(add-hook 'yaml-mode-hook
-	  '(lambda ()
-	     (define-key yaml-mode-map "\C-m" 'newline-and-indent)))
+(add-to-list 'load-path "~/.emacs.d/settings")
+(require 'general-settings)
+(require 'salt-settings)
 
 ;; Platform
 (if (eq system-type 'windows-nt)

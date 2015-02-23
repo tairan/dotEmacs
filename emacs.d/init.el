@@ -16,6 +16,7 @@
       '(go-mode
 	python-mode
 	coffee-mode
+	clojure-mode
 	yaml-mode
 	json-mode
 	markdown-mode

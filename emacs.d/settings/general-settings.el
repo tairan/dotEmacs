@@ -7,7 +7,10 @@
 ;; global settings
 (global-linum-mode t)
 (global-hl-line-mode t)
-(global-whitespace-mode t)
+;(global-whitespace-mode t)
 (global-whitespace-newline-mode t)
+
+; no backup
+(setq make-backup-files nil)
 
 (provide 'general-settings)

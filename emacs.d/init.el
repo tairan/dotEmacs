@@ -3,9 +3,9 @@
 (add-to-list 'package-archives
 	    '("gnu" . "http://elpa.gnu.org/packages/"))
 (add-to-list 'package-archives
-	     ' ("org" . "http://orgmode.org/elpa/"))
+	     '("org" . "http://orgmode.org/elpa/"))
 (add-to-list 'package-archives
-	     '("marmalade" . "http://marmalade-repo.org/packages/"))
+	     '("melpa" . "http://melpa.org/packages/"))
 (package-initialize)
 
 (when (not package-archive-contents)
@@ -18,6 +18,8 @@
 	coffee-mode
 	clojure-mode
 	yaml-mode
+	js2-modoe
+	web-mode
 	json-mode
 	markdown-mode
 	color-theme-solarized))
@@ -30,6 +32,7 @@
 (add-to-list 'load-path "~/.emacs.d/settings")
 (require 'general-settings)
 (require 'salt-settings)
+(require 'python-settings)
 
 ;; Platform
 (if (eq system-type 'windows-nt)

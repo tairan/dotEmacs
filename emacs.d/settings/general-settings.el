@@ -13,4 +13,7 @@
 ; no backup
 (setq make-backup-files nil)
 
+;; encoding
+(set-language-environment "UTF-8")
+
 (provide 'general-settings)

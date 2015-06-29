@@ -33,6 +33,10 @@
 (require 'general-settings)
 (require 'salt-settings)
 (require 'python-settings)
+(require 'web-settings)
+
+(add-to-list 'load-path "~/.emacs.d/nginx-mode")
+(require 'nginx-mode)
 
 ;; Platform
 (if (eq system-type 'windows-nt)

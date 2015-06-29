@@ -38,6 +38,11 @@
 (add-to-list 'load-path "~/.emacs.d/nginx-mode")
 (require 'nginx-mode)
 
+;;http://stackoverflow.com/questions/5795451/how-to-detect-that-emacs-is-in-terminal-mode
+(when (display-graphic-p)
+  (require 'x))
+
+
 ;; Platform
 (if (eq system-type 'windows-nt)
     (require 'winnt))
@@ -45,7 +50,3 @@
     (require 'linux))
 (if (eq system-type 'darwin)
     (require 'macosx))
-
-;;http://stackoverflow.com/questions/5795451/how-to-detect-that-emacs-is-in-terminal-mode
-(when (display-graphic-p)
-  (require 'x))

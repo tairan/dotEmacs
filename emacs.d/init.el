@@ -40,8 +40,11 @@
 
 ;;http://stackoverflow.com/questions/5795451/how-to-detect-that-emacs-is-in-terminal-mode
 (when (display-graphic-p)
-  (require 'x))
-
+  (tool-bar-mode -1)
+  (menu-bar-mode -1)
+  (scroll-bar-mode -1)
+  (color-theme-initialize)
+  (color-theme-solarized))
 
 ;; Platform
 (if (eq system-type 'windows-nt)

@@ -38,6 +38,11 @@
 (add-to-list 'load-path "~/.emacs.d/nginx-mode")
 (require 'nginx-mode)
 
+
+(add-to-list 'load-path "~/.emacs.d/packages")
+(require 'typescript-settings)
+
+
 ;;http://stackoverflow.com/questions/5795451/how-to-detect-that-emacs-is-in-terminal-mode
 (when (display-graphic-p)
   (tool-bar-mode -1)

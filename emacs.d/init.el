@@ -38,6 +38,10 @@
 (add-to-list 'load-path "~/.emacs.d/nginx-mode")
 (require 'nginx-mode)
 
+(add-to-list 'load-path "~/.emacs.d/dockerfile-mode")
+(require 'dockerfile-mode)
+(add-to-list 'auto-mode-alist '("Dockerfile\\'" . dockerfile-mode))
+
 
 (add-to-list 'load-path "~/.emacs.d/packages")
 (require 'typescript-settings)

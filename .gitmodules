@@ -1,3 +1,6 @@
 [submodule "emacs.d/nginx-mode"]
 	path = emacs.d/nginx-mode
 	url = https://github.com/ajc/nginx-mode.git
+[submodule "emacs.d/dockerfile-mode"]
+	path = emacs.d/dockerfile-mode
+	url = https://github.com/spotify/dockerfile-mode

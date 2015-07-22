@@ -1,5 +1,5 @@
 (require 'package)
-
+1
 (add-to-list 'package-archives
 	    '("gnu" . "http://elpa.gnu.org/packages/"))
 (add-to-list 'package-archives
@@ -48,8 +48,9 @@
   (tool-bar-mode -1)
   (menu-bar-mode -1)
   (scroll-bar-mode -1)
-  (color-theme-initialize)
-  (color-theme-solarized))
+  (load-theme 'solarized-dark t))
+;;  (color-theme-initialize)
+;;  (color-theme-solarized))
 
 ;; Platform
 (if (eq system-type 'windows-nt)

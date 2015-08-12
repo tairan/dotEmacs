@@ -22,6 +22,7 @@
 	web-mode
 	json-mode
 	markdown-mode
+	crontab-mode
 	color-theme-solarized))
 
 (dolist (pkg my-packages)

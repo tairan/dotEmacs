@@ -23,6 +23,8 @@
 	json-mode
 	markdown-mode
 	crontab-mode
+	thrift
+;;	csharp-mode
 	color-theme-solarized))
 
 (dolist (pkg my-packages)

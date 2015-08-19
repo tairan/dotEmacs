@@ -55,9 +55,9 @@
   (tool-bar-mode -1)
   (menu-bar-mode -1)
   (scroll-bar-mode -1)
-  (load-theme 'solarized-dark t))
-;;  (color-theme-initialize)
-;;  (color-theme-solarized))
+;;  (load-theme 'solarized-dark t))
+  (color-theme-initialize)
+  (color-theme-solarized))
 
 ;; Platform
 (if (eq system-type 'windows-nt)

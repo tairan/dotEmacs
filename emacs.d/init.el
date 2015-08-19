@@ -54,10 +54,8 @@
 (when (display-graphic-p)
   (tool-bar-mode -1)
   (menu-bar-mode -1)
-  (scroll-bar-mode -1)
-;;  (load-theme 'solarized-dark t))
-  (color-theme-initialize)
-  (color-theme-solarized))
+  (scroll-bar-mode -1))
+
 
 ;; Platform
 (if (eq system-type 'windows-nt)
